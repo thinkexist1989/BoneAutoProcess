@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>微软雅黑</family>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>541</width>
+      <height>63</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Step 1: 替换轮廓点数据</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <layout class="QGridLayout" name="gridLayout" columnstretch="4,1,1,0">
+     <item row="0" column="0">
+      <widget class="QLineEdit" name="point50Data"/>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="viewPointBtn">
+       <property name="text">
+        <string>浏览</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QPushButton" name="replaceBtn">
+       <property name="text">
+        <string>替换</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QPushButton" name="openPointButton">
+       <property name="text">
+        <string>打开轮廓点文件</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>120</y>
+      <width>541</width>
+      <height>63</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Step 2: 选择切骨坐标系</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2" columnstretch="0,0">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="viewCorBtn">
+       <property name="text">
+        <string>打开包含全部坐标系文件</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="chooseCorBtn">
+       <property name="text">
+        <string>打开切骨坐标系.txt</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>210</y>
+      <width>341</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Step 3: 预览规划，确定入刀点/刀具宽度/步长等参数</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_3" columnstretch="3,0,0">
+     <item row="0" column="2">
+      <widget class="QPushButton" name="ExecBtn">
+       <property name="text">
+        <string>执行</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="viewExecBtn">
+       <property name="text">
+        <string>浏览</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLineEdit" name="ExecEdit"/>
+     </item>
+     <item row="1" column="0" colspan="3">
+      <widget class="QTextBrowser" name="textBrowser"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="openActorInitBtn">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>300</y>
+      <width>171</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>打开actorInit.txt</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="openOffsetBtn">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>330</y>
+      <width>171</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>打开Offsetpose.txt</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>541</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_4">
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="rootDirEdit"/>
+     </item>
+     <item row="0" column="2">
+      <widget class="QPushButton" name="openRootDirBtn">
+       <property name="text">
+        <string>浏览</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>根目录</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QPushButton" name="openDirButton">
+       <property name="text">
+        <string>打开目录</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="openkeyPointBtn">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>270</y>
+      <width>171</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>打开keyPointNumber.csv</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
